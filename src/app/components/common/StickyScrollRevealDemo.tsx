@@ -4,60 +4,93 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "Criminal Case",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
-      </div>
-    ),
-  },
-  {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Representing you in criminal cases such as theft, assault, or any other criminal charges. This involves defending you in court, negotiating plea deals, and working to ensure your rights are protected throughout the legal process.",
     // content: (
-    //   <div className="h-full w-full  flex items-center justify-center text-white">
-    //     <Image
-    //       src="/linear.webp"
-    //       width={300}
-    //       height={300}
-    //       className="h-full w-full object-cover"
-    //       alt="linear board demo"
-    //     />
+    //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+    //     Collaborative Editing
     //   </div>
     // ),
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://cdn.pixabay.com/photo/2019/12/18/13/07/right-4703934_1280.jpg"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
   {
-    title: "Version control",
+    title: "Intellectual Property Rights",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Protect your creative ideas and innovations with our expert Intellectual Property Law services at Surajpur Court. We specialize in patent, trademark, and copyright registration, ensuring your inventions, brands, and original works are fully safeguarded. With extensive knowledge of Indian IP laws, we help you secure exclusive rights and defend against infringements, allowing you to maximize the value of your intellectual assets.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
+    // content: (
+    //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+    //     Version control
+    //   </div>
+    // ),
   },
   {
-    title: "Running out of content",
+    title: "Civil Law",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Handling disputes between individuals or organizations, such as property disputes, contract issues, or family law matters like divorce, child custody, and maintenance.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+    //   content: (
+    //     <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+    //     Version control
+    //   </div>
+    // ),
+  },
+  {
+    title: "Labor and Employment Law",
+    description:
+      "Protect your workplace rights with our specialized Labor and Employment Law services at Surajpur Court. We handle employment contracts, wrongful termination cases, workplace disputes, and labor rights issues, ensuring fair treatment and compliance with Indian labor laws. Trust us to advocate for your rights and provide expert legal support.",
+    // content: (
+    //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+    //     Running out of content
+    //   </div>
+    // ),
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="https://plus.unsplash.com/premium_photo-1661932816149-291a447e3022?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fExhYm9yJTIwYW5kJTIwRW1wbG95bWVudCUyMExhd3xlbnwwfHwyfHx8MA%3D%3D"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
       </div>
     ),
   },
 ];
 export function StickyScrollRevealDemo() {
   return (
-    <div className="mt-20 w-full p-20">
+    <div className="w-full p-20">
       {content.map((item, index) => (
         <div
           className="w-full flex justify-between items-center mt-10 gap-20"
@@ -67,10 +100,10 @@ export function StickyScrollRevealDemo() {
             {item.content}
           </div>
           <div className="gap-10 flex flex-col w-[50%] justify-center item-center">
-            <div className="w-full flex justify-center item-center font-bold">
+            <div className="w-full flex justify-center item-center font-bold text-3xl text-green-600 line-height-10">
               {item.title}
             </div>
-            <div className="w-full flex justify-center item-center">
+            <div className="w-full flex justify-center item-center text-slate-500">
               {item.description}
             </div>
           </div>

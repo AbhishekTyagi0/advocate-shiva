@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="flex w-full justify-between items-center h-28 px-24 py-10">
+    <div className="flex w-full justify-between items-center h-28 px-24 py-10 border sticky bg-white z-50 top-0">
       <div className="cursor-pointer w-auto h-full flex items-center justify-center">
         <Image
           src="/assets/shiva_image.png"
