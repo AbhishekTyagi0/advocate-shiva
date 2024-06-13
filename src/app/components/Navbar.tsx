@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
@@ -15,15 +16,15 @@ const Navbar: React.FC = () => {
       </div>
       <div className="flex flex-1 ml-20 justify-center">
         <ul className="flex gap-24">
-          <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
+          <Link href="/"><li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
             Home
-          </li>
-          <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
+          </li></Link>
+          <Link href="/about"><li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
             About
-          </li>
-          <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
+          </li></Link>
+          <Link href="/contact"><li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
             Contact
-          </li>
+          </li></Link>
         </ul>
       </div>
     </div>

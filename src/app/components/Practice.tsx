@@ -1,5 +1,5 @@
 import React from "react";
-import { StickyScrollRevealDemo } from "./common/StickyScrollRevealDemo";
+import { StickyScrollRevealDemo } from "@/app/components/common/StickyScrollRevealDemo";
 
 export const Practice: React.FC = () => {
   return (

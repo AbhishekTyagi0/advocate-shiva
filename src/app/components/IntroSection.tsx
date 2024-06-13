@@ -9,9 +9,9 @@ function IntroSection() {
   return (
     <div className="z-10 relative w-full">
       <div className="relative w-full h-[40rem] lg:h-screen overflow-hidden">
-        <video className=" w-full h-full opacity-80 object-cover" autoPlay loop muted>
+        <video className=" w-full h-full opacity-70 object-cover" autoPlay loop muted>
           <source
-            src="https://cdn.pixabay.com/video/2024/02/02/198890-909564521_large.mp4"
+            src="/assets/video/intro_video.mp4"
             type="video/mp4"
             className='w-full h-full'
           />

@@ -7,11 +7,7 @@ const content = [
     title: "Criminal Case",
     description:
       "Representing you in criminal cases such as theft, assault, or any other criminal charges. This involves defending you in court, negotiating plea deals, and working to ensure your rights are protected throughout the legal process.",
-    // content: (
-    //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-    //     Collaborative Editing
-    //   </div>
-    // ),
+
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
@@ -39,11 +35,7 @@ const content = [
         />
       </div>
     ),
-    // content: (
-    //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-    //     Version control
-    //   </div>
-    // ),
+
   },
   {
     title: "Civil Law",
@@ -60,25 +52,17 @@ const content = [
         />
       </div>
     ),
-    //   content: (
-    //     <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-    //     Version control
-    //   </div>
-    // ),
+ 
   },
   {
     title: "Labor and Employment Law",
     description:
       "Protect your workplace rights with our specialized Labor and Employment Law services at Surajpur Court. We handle employment contracts, wrongful termination cases, workplace disputes, and labor rights issues, ensuring fair treatment and compliance with Indian labor laws. Trust us to advocate for your rights and provide expert legal support.",
-    // content: (
-    //   <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-    //     Running out of content
-    //   </div>
-    // ),
+
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="https://plus.unsplash.com/premium_photo-1661932816149-291a447e3022?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fExhYm9yJTIwYW5kJTIwRW1wbG95bWVudCUyMExhd3xlbnwwfHwyfHx8MA%3D%3D"
+          src="/assets/labor1.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
