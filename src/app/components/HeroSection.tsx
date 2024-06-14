@@ -4,7 +4,7 @@ import { BackgroundGradientDemo } from "./common/BackgroundGradientDemo";
 
 export const HeroSection: React.FC = () => {
   return (
-    <div className="flex w-full justify-between items-center p-24">
+    <div className="flex w-full flex-col-reverse sm:flex-row justify-between items-center lg:p-24 p-6 md:10 mt-10">
       <div className="h-full flex flex-col items-center justify-center">
         <div className="w-full">
           <FlipWordsDemo />

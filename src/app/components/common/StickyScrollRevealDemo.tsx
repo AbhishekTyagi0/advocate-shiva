@@ -35,7 +35,6 @@ const content = [
         />
       </div>
     ),
-
   },
   {
     title: "Civil Law",
@@ -52,7 +51,6 @@ const content = [
         />
       </div>
     ),
- 
   },
   {
     title: "Labor and Employment Law",
@@ -74,10 +72,10 @@ const content = [
 ];
 export function StickyScrollRevealDemo() {
   return (
-    <div className="w-full p-20">
+    <div className="w-full lg:p-20 p-6 md:10">
       {content.map((item, index) => (
         <div
-          className="w-full flex justify-between items-center mt-10 gap-20"
+          className="max-md:hidden w-full flex justify-between items-center mt-10 gap-20"
           key={index}
         >
           <div className="w-[50%] h-[20rem] flex justify-center item-center">
@@ -86,6 +84,24 @@ export function StickyScrollRevealDemo() {
           <div className="gap-10 flex flex-col w-[50%] justify-center item-center">
             <div className="w-full flex justify-center item-center font-bold text-3xl text-green-600 line-height-10">
               {item.title}
+            </div>
+            <div className="w-full flex justify-center item-center text-slate-500">
+              {item.description}
+            </div>
+          </div>
+        </div>
+      ))}
+      {content.map((item, index) => (
+        <div
+          className="md:hidden w-full flex flex-col justify-between items-center mt-10 gap-6"
+          key={index}
+        >
+          <div className="w-full flex justify-center item-center font-bold text-3xl text-green-600 line-height-10">
+            {item.title}
+          </div>
+          <div className="gap-6 flex flex-col w-full justify-center item-center">
+            <div className="w-full h-[20rem] flex justify-center item-center">
+              {item.content}
             </div>
             <div className="w-full flex justify-center item-center text-slate-500">
               {item.description}

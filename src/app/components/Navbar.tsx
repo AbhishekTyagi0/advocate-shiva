@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar: React.FC = () => {
+  const [active, setActive] = React.useState(false);
+
   return (
-    <div className="flex w-full justify-between items-center h-28 px-24 py-10 border sticky bg-white z-50 top-0">
-      <div className="cursor-pointer w-auto h-full flex items-center justify-center">
+    <div className="flex w-full justify-between items-center h-28 md:px-24 px-6 py-10 border sticky bg-white z-50 top-0">
+      <div className="cursor-pointer h-full flex items-center justify-center">
         <Image
           src="/assets/shiva_image.png"
           alt="logo"
@@ -14,18 +18,59 @@ const Navbar: React.FC = () => {
           className="rounded-full h-16 object-cover"
         />
       </div>
-      <div className="flex flex-1 ml-20 justify-center">
-        <ul className="flex gap-24">
-          <Link href="/"><li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
-            Home
-          </li></Link>
-          <Link href="/about"><li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
-            About
-          </li></Link>
-          <Link href="/contact"><li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
-            Contact
-          </li></Link>
+      <div className="flex flex-1 lg:ml-20 justify-end w-full">
+        <p className="md:hidden">
+          <GiHamburgerMenu
+            size={30}
+            className="cursor-pointer z-60"
+            onClick={() => setActive(!active)}
+          />
+        </p>
+        <ul className="flex gap-24 max-md:hidden w-[40%] right-0 font-semibold text-green-700 bg-white text-xl px-20">
+          <Link href="/">
+            <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
+              Home
+            </li>
+          </Link>
+          <Link href="/about">
+            <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
+              About
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
+              Contact
+            </li>
+          </Link>
         </ul>
+        {!active && (
+          <ul className="flex gap-12 md:hidden w-full  h-[calc(100vh-4rem)] absolute top-0 mt-28 font-bold items-center p-12 flex-col text-green-700 bg-slate-200 text-3xl  px-20 z-10">
+            <Link href="/">
+              <li
+                className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8"
+                onClick={() => setActive(!active)}
+              >
+                Home
+              </li>
+            </Link>
+            <Link href="/about">
+              <li
+                className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8"
+                onClick={() => setActive(!active)}
+              >
+                About
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li
+                className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8"
+                onClick={() => setActive(!active)}
+              >
+                Contact
+              </li>
+            </Link>
+          </ul>
+        )}
       </div>
     </div>
   );

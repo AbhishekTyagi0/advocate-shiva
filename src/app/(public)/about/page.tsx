@@ -5,7 +5,6 @@ const page = () => {
   return (
     <>
     <HeroSection />
-    <div>About page</div>
     </>
   )
 }
