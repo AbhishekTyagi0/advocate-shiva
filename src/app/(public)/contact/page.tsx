@@ -51,6 +51,8 @@ const page = () => {
 
       if (response.ok) {
         console.log("Email sent successfully!");
+        form.reset();
+        alert("Email sent successfully!");
       } else {
         console.error("Failed to send email.");
       }
@@ -59,7 +61,7 @@ const page = () => {
     }
   }
   return (
-    <div className="w-full lg:p-20 lg:px-52 p-10 h-[70vh] bg-gray-100">
+    <div className="w-full lg:p-20 lg:px-52 p-10 h-[80vh] bg-gray-100">
       <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
       <p className="mb-4">
         If you have any questions, please don't hesitate to contact me.
