@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
             </li>
           </Link>
         </ul>
-        {!active && (
+        {active && (
           <ul className="flex gap-12 md:hidden w-full  h-[calc(100vh-4rem)] absolute top-0 mt-24 font-bold items-center p-12 flex-col text-green-700 bg-slate-200 text-3xl  px-20 z-10">
             <Link href="/">
               <li

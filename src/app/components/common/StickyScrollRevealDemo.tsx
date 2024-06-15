@@ -96,7 +96,7 @@ export function StickyScrollRevealDemo() {
           className="md:hidden w-full flex flex-col justify-between items-center mt-10 gap-6"
           key={index}
         >
-          <div className="w-full flex justify-center item-center font-bold text-3xl text-green-600 line-height-10">
+          <div className="w-full flex justify-center item-center font-bold md:text-3xl text-xl text-green-600 line-height-10">
             {item.title}
           </div>
           <div className="gap-6 flex flex-col w-full justify-center item-center">

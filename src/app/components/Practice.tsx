@@ -4,7 +4,7 @@ import { StickyScrollRevealDemo } from "@/app/components/common/StickyScrollReve
 export const Practice: React.FC = () => {
   return (
     <div className="lg:mt-20 my-10 w-full">
-      <h1 className="text-3xl font-bold text-green-600 flex justify-center items-center">
+      <h1 className="md:text-3xl text-2xl font-bold text-green-600 flex justify-center items-center">
         What do you need help with?
       </h1>
       <StickyScrollRevealDemo />
