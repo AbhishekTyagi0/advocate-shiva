@@ -28,7 +28,7 @@ const formSchema = z.object({
   }),
 });
 
-const page = () => {
+const ContactPage: React.FC = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -62,9 +62,9 @@ const page = () => {
   }
   return (
     <div className="w-full lg:p-20 lg:px-52 p-10 h-[80vh] bg-gray-100">
-      <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
+      <h1 className="text-3xl font-bold mb-4 text-green-600">Contact Me</h1>
       <p className="mb-4">
-        If you have any questions, please don't hesitate to contact me.
+        If you have any questions, please don&apos;t hesitate to contact me.
       </p>
       <Form {...form}>
         <form
@@ -91,11 +91,7 @@ const page = () => {
               <FormItem>
                 <FormLabel>Email </FormLabel>
                 <FormControl>
-                  <Input
-                    type="email"
-                    placeholder="Enter your email here..."
-                    {...field}
-                  />
+                  <Input placeholder="Enter your email here..." {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -111,7 +107,6 @@ const page = () => {
                 <FormControl>
                   <Textarea
                     placeholder="Type your message here."
-                    id="message"
                     {...field}
                     rows={7}
                   />
@@ -132,4 +127,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;
