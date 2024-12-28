@@ -54,8 +54,8 @@ const HeroSection = () => {
               • Real Estate • Labor Law
             </p>
             <p className="text-xs md:text-sm italic">
-              "Committed to protecting your rights and securing your future with
-              unwavering dedication and legal expertise."
+              &ldquo;Committed to protecting your rights and securing your
+              future with unwavering dedication and legal expertise.&rdquo;
             </p>
           </motion.div>
 

@@ -123,9 +123,9 @@ const PracticeAreasPage = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-100 mb-10"
           >
-            Schedule a confidential consultation with our experienced legal
-            team. We're here to protect your rights and fight for your
-            interests.
+            &ldquo;Schedule a confidential consultation with our experienced
+            legal team. We&apos;re here to protect your rights and fight for
+            your interests.&rdquo;
           </motion.p>
           <motion.div
             initial={{ y: 20, opacity: 0 }}
