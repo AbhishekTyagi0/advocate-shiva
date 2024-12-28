@@ -12,75 +12,108 @@ function Footer() {
   const date = new Date().getFullYear();
 
   return (
-    <>
-      <div className="w-full h-auto md:p-10 p-5 flex flex-col md:flex-row max-md:gap-10 justify-between md:items-center bg-slate-200 text-sm md:px-20 px-6">
-        <ul className="flex flex-col text-gray-500">
-          <h3 className="text-xl text-green-600 font-semibold mb-2">Go To:</h3>
-          <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8 ">
-            <Link href="/">Home</Link>
-          </li>
+    <footer className="bg-gray-900 text-gray-300">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/"
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/practice-areas"
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Practice Areas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-          <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
-            <Link href="/about">About</Link>
-          </li>
-          <li className="cursor-pointer hover:text-green-700 hover:underline underline-offset-8">
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
-        <ul className="flex flex-col text-gray-500 justify-center">
-          <h3 className="text-xl text-green-600 font-semibold mb-2">
-            Wants to know me:
-          </h3>
-          <li className="flex gap-2 items-center">
-            <IoLocationOutline />
-            District and Session Court Gautam Budh Nagar Noida Surajpur,201306
-          </li>
-          <li className="flex gap-2 items-center">
-            <FiPhoneCall />
-            +91 99586 79969
-          </li>
-          <li className="flex gap-2 items-center">
-            <MdOutlineMailLock />
-            shivatyagi945@gmail.com
-          </li>
-        </ul>
-        <ul className="flex flex-col text-gray-500">
-          <h3 className="text-xl text-green-600 font-semibold mb-2">
-            Follow Me on:
-          </h3>
-          <li>
-            <Link
-              className="flex gap-2 items-center"
-              href="https://www.instagram.com/shivaatyagiii/"
-            >
-              <BsInstagram />
-              Instagram
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="flex gap-2 items-center"
-              href="https://www.facebook.com/shiva.tyagi.3914"
-            >
-              <ImFacebook2 />
-              Facebook
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="flex gap-2 items-center"
-              href="https://x.com/shivatyagi0015"
-            >
-              <FaXTwitter />
-              Twitter
-            </Link>
-          </li>
-        </ul>
+          {/* Contact Information */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Contact Us
+            </h3>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-2">
+                <IoLocationOutline className="flex-shrink-0" />
+                <span>
+                  District and Session Court Gautam Budh Nagar Noida Surajpur,
+                  201306
+                </span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FiPhoneCall className="flex-shrink-0" />
+                <span>+91 99586 79969</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <MdOutlineMailLock className="flex-shrink-0" />
+                <span>shivatyagi945@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social Media */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <Link
+                href="https://www.instagram.com/shivaatyagiii/"
+                className="hover:text-white transition-colors duration-200"
+                target="_blank"
+              >
+                <BsInstagram size={24} />
+              </Link>
+              <Link
+                href="https://www.facebook.com/shiva.tyagi.3914"
+                className="hover:text-white transition-colors duration-200"
+                target="_blank"
+              >
+                <ImFacebook2 size={24} />
+              </Link>
+              <Link
+                href="https://x.com/shivatyagi0015"
+                className="hover:text-white transition-colors duration-200"
+                target="_blank"
+              >
+                <FaXTwitter size={24} />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>&copy; {date} Advocate Shiva Tyagi. All rights reserved.</p>
+        </div>
       </div>
-      <div className="w-full h-20 flex justify-center items-center bg-green-700 text-white">
-        <div>&copy;{date} Advocate Shiva Tyagi. All rights reserved.</div>
-      </div>
-    </>
+    </footer>
   );
 }
 
