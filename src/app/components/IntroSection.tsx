@@ -1,29 +1,31 @@
-import React from 'react'
+"use client";
 
+import React from "react";
 
 function IntroSection() {
-
-
-
-
   return (
-    <div className="z-10 relative w-full">
-      <div className="relative w-full h-[40rem] lg:h-screen overflow-hidden">
-        <video className=" w-full h-full opacity-70 object-cover" autoPlay loop muted>
-          <source
-            src="/assets/video/intro_video.mp4"
-            type="video/mp4"
-            className='w-full h-full'
-          />
-          Your browser does not support the video tag.
-        </video>
-          <div className="absolute z-20 top-0 lg:text-8xl text-4xl h-full gap-6 flex flex-col font-bold w-full text-white items-center justify-center space-x-4">
-          <span className='lg:text-7xl sm:text-3xl text-2xl'>Helping You With Your</span>
-          <span className='text-green-500'>Legal Needs</span>
-          </div>
+    <div className="relative w-full h-screen">
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/assets/video/intro_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-[rgb(165,160,160)]">
+        <h1 className="text-4xl md:text-7xl font-bold mb-4">
+          Helping You With Your
+        </h1>
+        <span className="text-3xl md:text-6xl font-bold text-slate-600">
+          Legal Needs
+        </span>
       </div>
-      
-      <div className="absolute bg-gradient-to-b from-gray-500 to-white bottom-0 h-9 w-full"></div>
     </div>
   );
 }
